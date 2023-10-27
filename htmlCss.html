@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 500px;
+            height: 300px;
+            background-color: black;
+            z-index: 10;
+            position: relative;
+        }
+        .box{
+            width: 30px;
+            height: 30px;
+            float: left;
+            z-index: -1;
+            position: absolute;
+        }
+        .black{
+            background-color: rgb(79, 72, 72);
+        }
+        .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: rgb(23, 23, 182);
+        }
+        .green{
+            background-color: rgb(41, 201, 102);
+        }
+
+
+        p::after{
+            content: " ";
+            width: 20px;
+            display: inline-block;
+            height: 2px;
+            background-color: red;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        img{
+        
+        }
+        img:hover{
+            opacity: 0.5;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box black"></div>
+        <div class="box red"></div>
+        <div class="box blue"></div>
+        <div class="box green"></div>
+
+    </div>
+<img src="./75b7d9f9-de23-4f99-a7f8-894095e306da.png" alt="">
+
+    <p>hllw hllw hllw</p>
+</body>
+</html>
